@@ -5,7 +5,7 @@ import cheerio from "cheerio";
 const app = express();
 
 app.get("/seraphim", async (req, res) => {
-  const response = await fetch("https://www.seraphimsl.com/");
+  const response = await fetch("https://www.seraphimsl.com/category/super-sales/");
   const html = await response.text();
   const $ = cheerio.load(html);
 
